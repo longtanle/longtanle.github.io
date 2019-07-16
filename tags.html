@@ -1,0 +1,37 @@
+---
+layout: blog
+title: Tags
+tagline: All tags used in the posts
+tags : [blog, grads, posts, post]
+img : 3.jpg
+img-mobile : 3-mobile.jpg
+author : Antonio Trento
+css: 
+js:
+bgcolor: ff5a71
+keywords: gradient, html, css, landing page, jekyll, ruby, web marketing, advertising, Antonio Trento
+canonical: https://grads.github.io/blog
+---
+{% include JB/setup %}
+
+ 
+      <h1 id="title">{{ page.title }}</h1>
+      {% if page.tagline %}
+      <p class="lead">{{ page.tagline }}</p>{% endif %}
+
+
+
+<ul class="nav nav-pills">
+  {% assign tags_list = site.tags %}
+  {% include JB/tags_list %}
+</ul>
+
+
+{% for tag in site.tags %}
+  <h2 id="{{ tag[0] }}-ref">{{ tag[0] }}</h2>
+  <ul>
+    {% assign pages_list = tag[1] %}
+    {% include JB/pages_list %}
+  </ul>
+{% endfor %}
+
