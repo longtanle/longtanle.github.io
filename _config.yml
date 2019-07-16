@@ -7,8 +7,8 @@ highlighter: null
 markdown: kramdown
 extensions: [fenced_code_blocks]
 excerpt_separator: "<!--more-->"
-url: https://heliumjk.github.io
-baseurl: "/heliumjk.github.io"
+url: https://longtanle.github.io
+baseurl: "/longtanle.github.io"
 # Themes are encouraged to use these universal variables
 # so be sure to set them if your theme uses them.
 #
@@ -21,23 +21,16 @@ google_ad_client: ca-pub-9204963049240271
 post_limit: 5
 
 
-title : Helium Jekyll
-tagline: Bootstrap 4 UI kit for jekyll
+title : I am Long
+tagline: Welcome to my page!
 author : 
-  name : Antonio Trento
-  site: https://lantoniotrento.github.io
-  description : I&#39;m a web master interested in communication applied to web marketing.
+  name : Long Tan Le
+  site: https://longtanle.github.io
+  description : I&#39;m a IT fresher.
   image : social-image.png
-  email : lantoniotrento@gmail.com
-  github : antoniotrento
-  twitter : lantoniotrento
-  facebook: lantoniotrento
-  linkedin: antoniotrento
-  instagram: lantoniotrento
-  pinterest: antoniotrento
-  feedburner : 
+  email : tanlong.ce@gmail.com
 
-twitter_username: lantoniotrento
+# twitter_username: lantoniotrento
 # The production_url is only used when full-domain names are needed
 # such as sitemap.txt
 # Most places will/should use BASE_PATH to make the urls
@@ -46,7 +39,7 @@ twitter_username: lantoniotrento
 # Else if you are pushing to username.github.io, replace with your username.
 # Finally if you are pushing to a GitHub project page, include the project name at the end.
 #
-production_url : https://heliumjk.github.io
+production_url : https://longtanle.github.io
 
 # All Jekyll-Bootstrap specific configurations are namespaced into this hash
 #
@@ -75,7 +68,7 @@ JB :
   #   - Only the following values are falsy: ["", null, false]
   #   - When setting BASE_PATH it must be a valid url.
   #     This means always setting the protocol (http|https) or prefixing with "/"
-  BASE_PATH : https://heliumjk.github.io
+  BASE_PATH : https://longtanle.github.io
 
   # By default, the asset_path is automatically defined relative to BASE_PATH plus the enabled theme.
   # ex: [BASE_PATH]/assets/themes/[THEME-NAME]
@@ -85,7 +78,7 @@ JB :
   #   http://s3.amazonaws.com/yoursite/themes/watermelon
   #   /assets
   #
-  ASSET_PATH : https://heliumjk.github.io/assets/themes/bootstrap
+  ASSET_PATH : https://longtanle.github.io/assets/themes/bootstrap
 
   # These paths are to the main pages Jekyll-Bootstrap ships with.
   # Some JB helpers refer to these paths; change them here if needed.
