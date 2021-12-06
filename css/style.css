@@ -402,7 +402,7 @@ img.svg{
 	   -moz-box-sizing: border-box; /* Firefox, other Gecko */
 			box-sizing: border-box; /* Opera/IE 8+ */
 }
-.arlo_tm_universal_box_wrap .overlay_image.hero{background-image: url(../img/hero/2.jpg);}
+.arlo_tm_universal_box_wrap .overlay_image.hero{background-image: url(../img/hero/bg.jpg);}
 .arlo_tm_universal_box_wrap .overlay_color.hero{background-color: rgba(7,23,55,.8);}
 .arlo_tm_universal_box_wrap .content.hero{height: 100vh;}
 .arlo_tm_hero_header_wrap .inner_content{
@@ -1990,7 +1990,7 @@ img.svg{
 .arlo_tm_universal_box_wrap.particle{
 	height: 100vh;
 	position: relative;
-	background-image: url(../img/hero/2.jpg);
+	background-image: url(../img/hero/bg.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center;
@@ -2014,7 +2014,7 @@ img.svg{
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: cover;
-	background-image: url(../img/hero/2.jpg);
+	background-image: url(../img/hero/bg.jpg);
 	position: relative;
 }
 .arlo_tm_ripple_wrap .overlay{
@@ -2086,7 +2086,7 @@ img.svg{
 	   -moz-box-sizing: border-box; /* Firefox, other Gecko */
 			box-sizing: border-box; /* Opera/IE 8+ */
 }
-.arlo_tm_intro_universal_bg_wrap .bg_wrap .overlay_image.top{background-image: url(../img/hero/2.jpg);}
+.arlo_tm_intro_universal_bg_wrap .bg_wrap .overlay_image.top{background-image: url(../img/hero/bg.jpg);}
 .arlo_tm_intro_universal_bg_wrap .bg_wrap .overlay_color.top{background-color: rgba(10,4,37,.85);}
 .arlo_tm_intro_universal_bg_wrap .content.top{height: 75vh;}
 .arlo_tm_intro_universal_bg_wrap .content.top .main_titles_wrap{
