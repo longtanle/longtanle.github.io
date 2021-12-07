@@ -811,7 +811,7 @@ img.svg{
 	height: auto;
 	clear: both;
 	float: left;
-	
+	padding: 0px 40px;
 	-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
 	   -moz-box-sizing: border-box; /* Firefox, other Gecko */
 			box-sizing: border-box; /* Opera/IE 8+ */
@@ -957,7 +957,12 @@ img.svg{
 	line-height: 1;
 	margin-bottom: 18px;
 }
+
 .arlo_tm_mini_title_holder.contact h4{margin-bottom:30px;}
+
+.arlo_tm_mini_title_holder h4 span{
+	color: #E3872D
+}
 
 /*---------------------------------------------------*/
 /*	04) ARLO SERVICES
@@ -1756,6 +1761,7 @@ img.svg{
 	height: auto;
 	float: left;
 	padding-right: 40px;
+	padding-left: 40px;
 	
 	-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
 	   -moz-box-sizing: border-box; /* Firefox, other Gecko */
@@ -1793,7 +1799,8 @@ img.svg{
 	width: 60%;
 	height: auto;
 	float: right;
-	
+	padding-right: 40px;
+
 	-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
 	   -moz-box-sizing: border-box; /* Firefox, other Gecko */
 			box-sizing: border-box; /* Opera/IE 8+ */		
@@ -2374,6 +2381,97 @@ img.svg{
 .arlo_tm_portfolio_single_wrap .pagination_wrap a:hover{color: #E3872D;}
 
 /*---------------------------------------------------*/
+/*	10) ARLO TIMELINE
+/*---------------------------------------------------*/
+
+.arlo_tm_timeline{
+	width: 100%;
+	height: auto;
+	clear: both;
+	float: left;
+	margin-bottom: 140px;
+}
+.arlo_tm_timeline .timeline_inner{
+	width: 100%;
+	height: auto;
+	clear: both;
+	float: left;
+	padding: 0px 40px;
+	display: flex;
+}
+.arlo_tm_timeline .timeline_inner .left,
+.arlo_tm_timeline .timeline_inner .right{
+	width: 50%;
+	padding-right: 50px;
+}
+.arlo_tm_timeline .timeline_inner .left ul,
+.arlo_tm_timeline .timeline_inner .right ul{
+	margin: 0px;
+	width: 100%;
+	float: left;
+	list-style-type: none;
+	position: relative;
+}
+.arlo_tm_timeline .timeline_inner .left ul:before,
+.arlo_tm_timeline .timeline_inner .right ul:before{
+	position: absolute;
+	content: "";
+	width: 1px;
+	top: 11px;
+	bottom: 5px;
+	background-color: rgba(0,0,0,.2);
+	left: 0px;
+}
+.arlo_tm_timeline .timeline_inner .svg{
+	width: 30px;
+	height: 30px;
+	color: #ff214f;
+	position: absolute;
+	left: -55px;
+	top: -3px;
+}
+.arlo_tm_timeline .timeline_inner .left ul li,
+.arlo_tm_timeline .timeline_inner .right ul li{
+	width: 100%;
+	margin: 0px 0px 50px 0px;
+	float: left;
+	padding-left: 40px;
+}
+.arlo_tm_timeline .timeline_inner .left ul li:last-child{margin-bottom: 0px;}
+.arlo_tm_timeline .timeline_inner .right ul li:last-child{margin-bottom: 0px;}
+.arlo_tm_timeline .timeline_inner .left ul li .inner,
+.arlo_tm_timeline .timeline_inner .right ul li .inner{
+	width: 100%;
+	height: auto;
+	clear: both;
+	float: left;
+	position: relative;
+}
+.arlo_tm_timeline .timeline_inner .left ul li .inner .year,
+.arlo_tm_timeline .timeline_inner .right ul li .inner .year{margin-bottom: 20px;}
+.arlo_tm_timeline .timeline_inner .left ul li .inner .title,
+.arlo_tm_timeline .timeline_inner .right ul li .inner .title{
+	color: #E3872D;
+	font-size: 20px;
+	margin-bottom: 20px;
+}
+
+/*---------------------------------------------------*/
+/*	 20. ARLO WATER DEMO
+/*---------------------------------------------------*/
+
+.arlo_tm_hero_header.repple{
+	width: 100%;
+	height: 100vh;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	background-image: url("../img/hero/bg.jpg");
+	position: relative;
+	z-index: 4;
+}
+
+/*---------------------------------------------------*/
 /*	14) ARLO MOBILE HEADER
 /*---------------------------------------------------*/
 
@@ -2536,6 +2634,7 @@ img.svg{
 	font-size: 19px;
 }
 
+
 /*---------------------------------------------------*/
 /*	15) ARLO MEDIA QUERIES (FOR SMALL DEVIVES)
 /*---------------------------------------------------*/
@@ -2584,6 +2683,9 @@ img.svg{
 	.arlo_tm_totop.opened{bottom: 20px;}
 	.arlo_tm_preloader{display: none;}
 	.arlo_tm_portfolio_single_wrap .title_holder h3{font-size: 45px;}
+	.arlo_tm_timeline .timeline_inner{flex-direction: column;}
+	.arlo_tm_timeline .timeline_inner .left {padding-bottom: 40px;}
+	.arlo_tm_timeline .timeline_inner .left, .arlo_tm_timeline .timeline_inner .right{padding-right: 0px;width: 100%;}
 }
 @media (max-width: 480px) {
 	.arlo_tm_hero_header_wrap .name_holder h3{font-size: 30px;}

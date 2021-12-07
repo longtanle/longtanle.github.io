@@ -20,28 +20,24 @@
 <!-- STYLES -->
 <link href="https://fonts.googleapis.com/css?family=Montserrat:400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
+
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
+<link rel="stylesheet" href="css/mdbootstrap/bootstrap.min.css">
+<link rel="stylesheet" href="css/mdbootstrap/mdb.min.css">
+<link rel="stylesheet" href="css/mdbootstrap/style.css">
+<link rel="stylesheet" href="css/mdbootstrap/addons/datatables.min.css">
+
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 <link rel="stylesheet" type="text/css" href="css/plugins.css" />
 <link rel="stylesheet" type="text/css" href="css/style.css" />
+
+
 <!--[if lt IE 9]> <script type="text/javascript" src="js/modernizr.custom.js"></script> <![endif]-->
 <!-- /STYLES -->
-<style>
-table {
-	font-family: arial, sans-serif;
-	border-collapse: collapse;
-	width: 100%;
-  }
-  
-  td, th {
-	border: 1px solid #dddddd;
-	text-align: left;
-	padding: 8px;
-  }
-  
-  tr:nth-child(even) {
-	background-color: #dddddd;
-}
-</style>
+
 </head>
 
 <body>
@@ -68,7 +64,7 @@ table {
 	<div class="arlo_tm_mobile_header_wrap">
 		<div class="main_wrap">
 			<div class="logo">
-				<img src="img/logo/logo-imlong-mobi.png" alt="" />
+				<!-- <img src="img/logo/logo-imlong-mobi.png" alt="LONGTANLE" /> -->
 			</div>
 			<div class="arlo_tm_trigger">
 				<div class="hamburger hamburger--collapse-r">
@@ -83,7 +79,7 @@ table {
 				<ul class="anchor_nav">
 					<li><a href="#home">Home</a></li>
 					<li><a href="#about">About</a></li>
-					<li><a href="#services">Research Interest</a></li>
+					<li><a href="#services">Research</a></li>
 					<li><a href="#publication">Publication</a></li>
 					<li><a href="#portfolio">Portfolio</a></li>
 					<li><a href="#news">Blog</a></li>
@@ -107,7 +103,7 @@ table {
 					<ul class="anchor_nav">
 						<li><a href="#home">Home</a></li>
 						<li><a href="#about">About</a></li>
-						<li><a href="#services">Research Interest</a></li>
+						<li><a href="#services">Research</a></li>
 						<li><a href="#publication">Publication</a></li>
 						<li><a href="#portfolio">Portfolio</a></li>
 						<li><a href="#news">Blog</a></li>
@@ -161,7 +157,7 @@ table {
 						<div class="container">
 							<div class="arlo_tm_title_holder">
 								<h3>About Me</h3>
-								<span>My brief biography</span>
+								<span> A brief biography to introduce myself!</span>
 							</div>
 							<div class="arlo_tm_about_wrap">
 								<div class="author_wrap">
@@ -179,40 +175,47 @@ table {
 									</div>
 									<div class="rightbox">
 										<div class="arlo_tm_mini_title_holder">
-											<h4>Hi! My name is <strong>Long Tan Le</strong></h4>
+											<h4>
+												Hi! My name is <span><strong>Long Tan Le</strong></span>  	
+											</h4>
+											<h4> (Lê Tấn Long in Vietnamese) </h4>
 										</div>
 										<div class="definition">
 											<p align="justify">
 											I received my B.E. degree in Computer Engineering from Ho Chi Minh City University of Technology (HCMUT), Vietnam, in 2018. 
 											I was a researcher and teaching assistant with Falcuty of Computer Science and Engineering, HCMUT, from 2018 to 2021. 
-											Currently, I am pursuing my PhD degree in Computer Science at Falcuty of Engineering, the University of Sydney (USyd), NSW, Australia. 
-											My research interests include Edge Computing, Federated Learning and its applications for Networking.
+											Currently, I am pursuing my PhD degree in Computer Science at DUAL group, Falcuty of Engineering, the University of Sydney (USyd), NSW, Australia. 
+											My research interests include Federated Learning, Edge Computing, and their applications for next-generation networking.
 										</p>
 										</div>
 										<div class="about_short_contact_wrap">
 											<ul>
 												<li>
-													<span><label>City:</label> Sydney, NSW, Australia</span>
+													<img class="svg" src="img/svg/location-1.svg" alt="" />
+													<span><label>Location:</label> Sydney, NSW, Australia</span>
 												</li>
 												<li>
-													<span><label>Google Scholar:</label> Updating</span>
-												</li>
-												<li>
-													<span><label>Mail:</label> <a href="mailto:lole4878@uni.sydney.edu.au">lole4878&#64;uni.sydney.edu.au</a></span>
-												</li>
-												<li>
-													<span><label>Research Gate:</label> 
-														<a href="#"> Updating
-														</a></span>
-												</li>	
-												<li>
+													<img class="svg" src="img/svg/call-2.svg" alt="" />
 													<span><label>Phone:</label> <a href="#"> Updating</a></span>
 												</li>
 												<li>
-													<span><label>ORCID:</label> <a href=""> Updating</a></span>
+													<img class="svg" src="img/svg/message-3.svg" alt="" />
+													<span><label>Mail:</label> <a href="mailto:lole4878@uni.sydney.edu.au">lole4878&#64;uni.sydney.edu.au</a></span>
 												</li>
 												<li>
+													<img class="svg" src="img/svg/web.svg" alt="" />
 													<span><label>Website:</label> <a href="https://longtanle.github.io">longtanle.github.io</a></span>
+												</li>
+												<li>
+													<span><label>Research Index:</label>
+														<a href="#">
+															<img class="svg" src="img/svg/google.svg" alt="" style="width:24px; height:24px"/>
+														</a>
+
+														<a href="#">
+															<img class="svg" src="img/svg/rg.svg" alt="" style="width:24px; height:24px" />
+														</a>													
+													</span>
 												</li>
 												<li>
 													<span><label>Social Networks:</label> 
@@ -220,7 +223,7 @@ table {
 														<i class="fa fa-linkedin-square" style="font-size:24px" ></i></a>
 
 													 <a href="https://twitter.com/TanLongLe">
-														<i class="fa fa-twitter-square"  style="font-size:24px"></i>
+														<i class="fa fa-twitter-square" style="font-size:24px" ></i>
 													</a>
 
 													<a href="https://github.com/longtanle">
@@ -258,19 +261,16 @@ table {
 						<div class="container">
 							<div class="inner_wrap">
 								<div class="arlo_tm_mini_title_holder">
+								
 									<h4> <span>Latest News</span></h4>
 									
-									<p> Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-											Lorem Ipsum has been the industry's standard dummy text ever since. </p>
-											
-									<p> Lorem Ipsum has been the industry. Lorem Ipsum has been the industry's standard dummy text since. Lorem Ipsum is simply.</p>
-	
-									</ol>
-								</div>
-
-																
+									<p> <span class="badge badge-danger"> Hot </span> <b> Dec 2021:</b> Welcome to my personal website! </p>  
 								<!--
+						
 								<div class="rightbox">
+									
+								</div>
+								
 									<div class="progress_bar_wrap_total">
 										<div class="arlo_tm_progress_wrap" data-size="small" data-round="c" data-strip="off">
 											<div class="arlo_tm_progress" data-value="95" data-color="#000">
@@ -306,85 +306,88 @@ table {
 						<div class="container">
 							<div class="arlo_tm_title_holder">
 								<h3>Research Interests</h3>
-								<span>Meet my current research areas</span>
+								<span>My research interests lie in the intersection of the following fields</span>
 							</div>
 							<div class="list_wrap">
 								<ul>
 									<li>
 										<div class="inner">
 											<div class="icon">
-												<img class="svg" src="img/svg/camera-diaphragm.svg" alt="" />
+												<img class="svg" src="img/svg/share.svg" alt="" />
 											</div>
 											<div class="title_service">
 												<h3>Federated Learning</h3>
 											</div>
 											<div class="text">
-												<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since. ...</p>
+												<p> <a href="https://ai.googleblog.com/2017/04/federated-learning-collaborative.html">Federated Learning: Collaborative Machine Learning without Centralized Training Data </a>.
+												FL is one of <a href="https://www.forbes.com/sites/robtoews/2020/10/12/the-next-generation-of-artificial-intelligence/?sh=140f7a1a59eb"> The Next Generation Of Artificial Intelligence </a>.
+												</p>
 											</div>
 										</div>
 									</li>
 									<li>
 										<div class="inner">
 											<div class="icon">
-												<img class="svg" src="img/svg/new-tab.svg" alt="" />
+												<img class="svg" src="img/svg/ec.svg"" alt="" />
 											</div>
 											<div class="title_service">
 												<h3>Edge Computing</h3>
 											</div>
 											<div class="text">
-												<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since. ...</p>
+												<p> Nowadays, computing systems are getting "edgier", and <a href="https://www.eweek.com/networking/edge-computing/"> the market for edge computing devices is also huge—and growing</a>.</p>
 											</div>
 										</div>
 									</li>
 									<li>
 										<div class="inner">
 											<div class="icon">
-												<img class="svg" src="img/svg/layers.svg" alt="" />
+												<img class="svg" src="img/svg/opti.svg" alt="" />
 											</div>
 											<div class="title_service">
 												<h3>Optimization</h3>
 											</div>
 											<div class="text">
-												<p> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since....</p>
+												<p> Learning how to weigh constraints and criteria against various solutions in order to select the best one is necessary not only for engineering, but also for life.</p>
 											</div>
 										</div>
 									</li>
 									<li>
 										<div class="inner">
 											<div class="icon">
-												<img class="svg" src="img/svg/share.svg" alt="" />
+												<img class="svg" src="img/svg/ot.svg" alt="" />
 											</div>
 											<div class="title_service">
 												<h3>Optimal <br> Transport</h3>
 											</div>
 											<div class="text">
-												<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since. ...</p>
+												<p> <a href="https://towardsdatascience.com/optimal-transport-a-hidden-gem-that-empowers-todays-machine-learning-2609bbf67e59"> A hidden gem that empowers today’s machine learning </a>
+													There are many more applications where OT has shown to be useful.</p>
 											</div>
 										</div>
 									</li>
 									<li>
 										<div class="inner">
 											<div class="icon">
-												<img class="svg" src="img/svg/adobe-illustrator.svg" alt="" />
+												<img class="svg" src="img/svg/sdn.svg" alt="" />
 											</div>
 											<div class="title_service">
 												<h3>Sofware-Defined Networking</h3>
 											</div>
 											<div class="text">
-												<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since. ...</p>
+												<p>A more flexible and programmable network paradigm that's easier to manage and control network applications and services.</p>
 											</div>
 										</div>
 									</li>
 									<li>
 										<div class="inner">
 											<div class="icon">
-												<img class="svg" src="img/svg/seo-performance-marketing-graphic.svg" alt="" />
+												<img class="svg" src="img/svg/fpga.svg" alt="" />
 											</div>
 											<div class="title_service">
 												<h3>Reconfigurable Hardware</h3>
 											</div>
 											<div class="text">
-												<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since. ...</p>
+												<p> Unlocking the benefits of the reconfigurable computing platform can help improve AI Edge inference throughput.</p>
 											</div>
 										</div>
 									</li>
@@ -403,37 +406,115 @@ table {
 								<h3>Publications</h3>
 								<span>Check out my recent publications</span>
 							</div>
-							<div class="author_wrap">
-								<table>
-									<tr>
-									  <th>Year</th>
-									  <th>Type</th>
-									  <th>Publication</th>
-									</tr>
-									<tr>
-									  <td>2018</td>
-									  <td>Conference</td>
-									  <td>T. N. Thinh, L. T. Le, M. A. T. Tran “ODL-ANTIFLOOD: A Comprehensive Solution For Securing OpenDayLight Controller”, 
-										  in 2018 International Conference on Advanced Computing and Applications (ACOMP), HCMC, Nov 2018.</td>
-									</tr>
-									<tr>
-									  <td>2020</td>
-									  <td>Conference</td>
-									  <td>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's</td>
-									</tr>
-									<tr>
-									  <td>2021</td>
-									  <td>Conference</td>
-									  <td>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's</td>
-									</tr>
-								  </table>
-
+							<div class="container">
+								<div class="table-responsive">
+									<table id="dtBasicExample" class="table table-hover " cellspacing="0" width="100%">
+										<thead>
+											<tr>
+												<th class="d-none d-sm-table-cell">Field</th>
+												<th>Year</th>
+												<th class="d-none d-sm-table-cell">Type</th>
+												<th>Publication</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<td class="d-none d-sm-table-cell">Networking</td>
+												<td>2018</td>
+												<td class="d-none d-sm-table-cell">Conference</td>
+												<td>T. N. Thinh, L. T. Le, M. A. T. Tran “ODL-ANTIFLOOD: A Comprehensive Solution For Securing OpenDayLight Controller”, 
+													in 2018 International Conference on Advanced Computing and Applications (ACOMP), HCMC, Nov 2018.</td>
+											</tr>
+											<!--
+											<tr>
+												<td>Networking</td>
+												<td>2020</td>
+												<td>Conference</td>
+												<td>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's</td>
+											</tr>
+											
+											<tr>
+												<td>Networking</td>
+												<td>2021</td>
+												<td>Conference</td>
+												<td>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's</td>
+											</tr>
+										-->
+										</tbody>
+									</table>
+								</div>
 							</div>
 						</div>
 					</div>
 				</div>	
 				<!-- /PUBLICATIONS -->
 
+				<!-- TIMELINE -->
+				<div class="arlo_tm_section" id="education">
+					<div class="arlo_tm_timeline">
+						<div class="container">
+							<div class="arlo_tm_title_holder">
+								<h3>Education & Experience</h3>
+								<span>Studying and Working Timeline</span>
+							</div>
+							<div class="timeline_inner">
+								<div class="left">
+									<ul><li  class="">
+											<div class="inner">
+												<img class="svg" src="img/svg/degree-5.svg" alt="" />
+												<p class="year">2021 - Now</p>
+												<h3 class="title">The University of Sydney</h3>
+												<p class="text"> Doctor of Philosophy in Computer Science</p>
+											</div>
+										</li><li  class="">
+											<div class="inner">
+												<img class="svg" src="img/svg/degree-5.svg" alt="" />
+												<p class="year">2013 - 2018</p>
+												<h3 class="title">Ho Chi Minh City University of Technology</h3>
+												<p class="text"> Bachelor of Engineering in Computer Engineering</p>
+											</div>
+										</li><li  class="">
+											<div class="inner">
+												<img class="svg" src="img/svg/degree-5.svg" alt="" />
+												<p class="year">2010 - 2013</p>
+												<h3 class="title">Quoc Hoc - Hue High School for the Gifted</h3>
+												<p class="text">High School Certification</p>
+											</div>
+										</li></ul>
+								</div>
+								<div class="right">
+									<ul><li class="">
+											<div class="inner">
+												<img class="svg" src="img/svg/portfolio.svg" alt="" />
+												<p class="year">2018 - 2021</p>
+												<h3 class="title">Researcher </h3>
+												<p class="text"> Computer Engineering Laboratory, HCMUT</p>
+											</div>
+										</li><li class="">
+											<div class="inner">
+												<img class="svg" src="img/svg/portfolio.svg" alt="" />
+												<p class="year">2018 - 2021</p>
+												<h3 class="title">Teaching Assistant</h3>
+												<p class="text"> Falcuty of Computer Science and Engineering, HCMUT</p>
+											</div>
+										</li>
+										</li><li class="">
+											<div class="inner">
+												<img class="svg" src="img/svg/portfolio.svg" alt="" />
+												<p class="year">2017</p>
+												<h3 class="title">Intern Developer</h3>
+												<p class="text"> FPT Software, HCMC</p>
+											</div>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- /TIMELINE -->
+
+				
 				<!-- PORTFOLIO -->
 				<div class="arlo_tm_section relative" id="portfolio">
 					<div class="arlo_tm_portfolio_wrapper_all">
@@ -799,12 +880,29 @@ table {
 	</div>
 </div>
 <!-- / WRAPPER ALL -->
-	
+
+<script type="text/javascript" src="js/mdbootstrap/jquery.min.js"></script>
+<script type="text/javascript" src="js/mdbootstrap/popper.min.js"></script>
+<script type="text/javascript" src="js/mdbootstrap/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/mdbootstrap/mdb.min.js"></script>
+
 <!-- SCRIPTS -->
 <script src="js/jquery.js"></script>
 <!--[if lt IE 10]> <script type="text/javascript" src="js/ie8.js"></script> <![endif]-->	
 <script src="js/plugins.js"></script>
 <script src="js/init.js"></script>
+
+
+<script type="text/javascript" src="js/mdbootstrap/addons/datatables.min.js"></script>
+
+
+<script>
+	$(document).ready(function () {
+		$('#dtBasicExample').DataTable();
+		$('.dataTables_length').addClass('bs-select');
+	});
+</script>
+
 <!-- /SCRIPTS -->
 
 </body>
