@@ -1760,7 +1760,6 @@ img.svg{
 	width: 40%;
 	height: auto;
 	float: left;
-	padding-right: 40px;
 	padding-left: 40px;
 	
 	-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
@@ -1799,6 +1798,7 @@ img.svg{
 	width: 60%;
 	height: auto;
 	float: right;
+	padding-left: 40px;
 	padding-right: 40px;
 
 	-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
