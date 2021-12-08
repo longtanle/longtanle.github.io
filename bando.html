@@ -1,0 +1,21 @@
+<html>
+<head>
+    <script type="text/javascript" src="http://www.vietbando.com/maps/API/VBDMapAPI.js?key=8Rc8LecwooegkMGzBULmaInIV1d0xh4nDtE44vqJjbk="></script>
+    <script type="text/javascript">
+    function loadMap()
+    {
+        if (VBrowserIsCompatible())
+        {
+        var map = new VMap(document.getElementById('container'));
+        var pt = new VLatLng(10.8152328, 106.680505);
+        map.setCenter(pt, 4);
+        var marker = new VMarker(pt, new VIcon());
+        map.addOverlay(marker);
+        }
+    }
+    </script>
+</head>
+<body onload="loadMap()">
+<div id="container" style="width:500px; height:300px;position:absolute;"></div>
+</body>
+</html>
