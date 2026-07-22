@@ -42,7 +42,46 @@
     }).join("");
   }
 
-  document.addEventListener("DOMContentLoaded", function () {
+  function renderMobileHeader() {
+    return [
+      '<div class="arlo_tm_mobile_header_wrap">',
+      '<div class="main_wrap">',
+      '<div class="logo"></div>',
+      '<div class="arlo_tm_trigger">',
+      '<div class="hamburger hamburger--collapse-r">',
+      '<div class="hamburger-box"><div class="hamburger-inner"></div></div>',
+      "</div>",
+      "</div>",
+      "</div>",
+      '<div class="arlo_tm_mobile_menu_wrap">',
+      '<div class="mob_menu"><ul class="anchor_nav">' + renderMenu() + "</ul></div>",
+      "</div>",
+      "</div>"
+    ].join("");
+  }
+
+  function renderSidebar() {
+    return [
+      '<div class="arlo_tm_leftpart_wrap">',
+      '<div class="leftpart_inner">',
+      '<div class="logo_wrap"><a href="' + hrefFor("#home") + '"><img src="img/logo/logo-imlong-0.png" alt="" /></a></div>',
+      '<div class="menu_list_wrap"><ul class="anchor_nav">' + renderMenu() + "</ul></div>",
+      '<div class="leftpart_bottom"><div class="social_wrap"><ul>' + renderSocial() + "</ul></div></div>",
+      '<a class="arlo_tm_resize" href="#"><i class="xcon-angle-left"></i></a>',
+      "</div>",
+      "</div>"
+    ].join("");
+  }
+
+  function applyShell() {
+    document.querySelectorAll('[data-site-shell="mobile-header"]').forEach(function (el) {
+      el.outerHTML = renderMobileHeader();
+    });
+
+    document.querySelectorAll('[data-site-shell="sidebar"]').forEach(function (el) {
+      el.outerHTML = renderSidebar();
+    });
+
     document.querySelectorAll(".arlo_tm_mobile_menu_wrap .mob_menu ul").forEach(function (el) {
       el.innerHTML = renderMenu();
     });
@@ -91,5 +130,13 @@
         ].join("");
       }
     }
-  });
+  }
+
+  if (document.readyState === "loading") {
+    document.addEventListener("DOMContentLoaded", applyShell);
+  } else {
+    applyShell();
+  }
+
+  window.addEventListener("load", applyShell);
 })();
