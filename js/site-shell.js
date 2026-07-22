@@ -132,12 +132,12 @@
           '<div class="arlo_tm_mini_title_holder contact"><h4>Preferred contact</h4></div>',
           '<div class="short_info_wrap">',
           "<p>The quickest way to reach me is by email. For research collaboration, data science work, or speaking opportunities, please get in touch through one of the links below.</p>",
-          "<ul>",
-          '<li><p><label>Email:</label><span><a href="mailto:tanlong.ce@gmail.com">tanlong.ce@gmail.com</a></span></p></li>',
-          '<li><p><label>LinkedIn:</label><span><a href="https://www.linkedin.com/in/long-le-tan-660018128/">long-le-tan</a></span></p></li>',
-          '<li><p><label>GitHub:</label><span><a href="https://github.com/longtanle">github.com/longtanle</a></span></p></li>',
-          '<li><p><label>ORCID:</label><span><a href="https://orcid.org/0000-0003-3284-1990">0000-0003-3284-1990</a></span></p></li>',
-          "</ul>",
+          '<div class="contact_link_list">',
+          '<p><label>Email:</label><span><a href="mailto:tanlong.ce@gmail.com">tanlong.ce@gmail.com</a></span></p>',
+          '<p><label>LinkedIn:</label><span><a href="https://www.linkedin.com/in/long-le-tan-660018128/">long-le-tan</a></span></p>',
+          '<p><label>GitHub:</label><span><a href="https://github.com/longtanle">github.com/longtanle</a></span></p>',
+          '<p><label>ORCID:</label><span><a href="https://orcid.org/0000-0003-3284-1990">0000-0003-3284-1990</a></span></p>',
+          "</div>",
           "</div>"
         ].join("");
       }
