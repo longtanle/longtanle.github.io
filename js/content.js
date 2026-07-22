@@ -103,6 +103,9 @@
     }).join("");
 
     if (typeof window.arlo_tm_popup_blog === "function") {
+      if (window.jQuery) {
+        window.jQuery("#arlo_tm_popup_blog .inner_popup").empty();
+      }
       window.arlo_tm_popup_blog();
     }
   }
