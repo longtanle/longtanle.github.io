@@ -5,7 +5,7 @@
     "orcidPutCode": 203202960,
     "doi": "10.1109/jsac.2026.3656885",
     "selected": false,
-    "field": "",
+    "field": "SemCom, AI",
     "year": 2026,
     "type": "Journal",
     "title": "Distributionally Robust Wireless Semantic Communication With Large AI Models",
@@ -24,7 +24,7 @@
     "orcidPutCode": 214699772,
     "doi": "10.1109/jiot.2026.3693272",
     "selected": false,
-    "field": "",
+    "field": "FL, IoT, Time Series",
     "year": 2026,
     "type": "Journal",
     "title": "Federated Koopman--Reservoir Learning for Multivariate Time-Series Anomaly Detection in IoT",
@@ -43,7 +43,7 @@
     "orcidPutCode": 196127134,
     "doi": "10.1007/978-981-95-4384-7_5",
     "selected": false,
-    "field": "",
+    "field": "EdgeAI, FPGA",
     "year": 2026,
     "type": "Book Chapter",
     "title": "LERIS: An Energy-Efficient and Resource-Optimized Inference System for CNNs and MLPs in Edge AI Applications",
@@ -62,7 +62,7 @@
     "orcidPutCode": 197595398,
     "doi": "10.1007/978-981-95-4963-4_33",
     "selected": false,
-    "field": "",
+    "field": "EdgeAI, FPGA",
     "year": 2026,
     "type": "Book Chapter",
     "title": "Multi-Sensor Fusion Core: A Real Time FPGA Based Sensor Fusion Architecture for Autonomous Vehicles with Ultra Low Latency and High Reliability",
@@ -81,7 +81,7 @@
     "orcidPutCode": 182737006,
     "doi": "10.1007/978-981-96-6005-6_17",
     "selected": false,
-    "field": "",
+    "field": "EdgeAI, FPGA",
     "year": 2025,
     "type": "Book Chapter",
     "title": "ADMEdge: Accelerating Edge Computing Through Co-design for Enhanced Data Mobility",
@@ -109,10 +109,6 @@
     "links": [
       {
         "label": "Paper",
-        "url": "https://doi.org/10.1137/1.9781611978520.7"
-      },
-      {
-        "label": "Paper",
         "url": "https://epubs.siam.org/doi/abs/10.1137/1.9781611978520.7"
       }
     ]
@@ -132,15 +128,7 @@
     "links": [
       {
         "label": "Paper",
-        "url": "https://doi.org/10.1145/3627673.3679752"
-      },
-      {
-        "label": "Paper",
         "url": "https://dl.acm.org/doi/abs/10.1145/3627673.3679752"
-      },
-      {
-        "label": "Preprint",
-        "url": "https://arxiv.org/abs/2309.15659v1"
       },
       {
         "label": "Code",
@@ -164,10 +152,6 @@
       {
         "label": "Paper",
         "url": "https://doi.org/10.1109/tnet.2024.3423780"
-      },
-      {
-        "label": "Paper",
-        "url": "https://ieeexplore.ieee.org/abstract/document/10593810"
       },
       {
         "label": "Conference Version",
@@ -195,10 +179,6 @@
       {
         "label": "Paper",
         "url": "https://doi.org/10.1109/infocom53939.2023.10229026"
-      },
-      {
-        "label": "Preprint",
-        "url": "https://arxiv.org/abs/2212.12121"
       },
       {
         "label": "Code",
@@ -240,10 +220,6 @@
     "links": [
       {
         "label": "Paper",
-        "url": "https://doi.org/10.21553/rev-jec.294"
-      },
-      {
-        "label": "Paper",
         "url": "https://mail.rev-jec.org/index.php/rev-jec/article/view/294"
       }
     ]
@@ -264,10 +240,6 @@
       {
         "label": "Paper",
         "url": "https://doi.org/10.4108/eai.24-5-2021.169971"
-      },
-      {
-        "label": "Paper",
-        "url": "https://eudl.eu/doi/10.4108/eai.24-5-2021.169971"
       }
     ]
   },
@@ -287,10 +259,6 @@
       {
         "label": "Paper",
         "url": "https://doi.org/10.1109/atc52653.2021.9598291"
-      },
-      {
-        "label": "Paper",
-        "url": "https://ieeexplore.ieee.org/document/9598291"
       }
     ]
   },
@@ -329,10 +297,6 @@
       {
         "label": "Paper",
         "url": "https://doi.org/10.1109/nics54270.2021.9701522"
-      },
-      {
-        "label": "Paper",
-        "url": "https://ieeexplore.ieee.org/abstract/document/9701522"
       }
     ]
   },
@@ -352,10 +316,6 @@
       {
         "label": "Paper",
         "url": "https://doi.org/10.1109/acomp.2018.00011"
-      },
-      {
-        "label": "Paper",
-        "url": "https://ieeexplore.ieee.org/abstract/document/8589483"
       }
     ]
   }
