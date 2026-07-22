@@ -145,7 +145,7 @@
 							</div>
 							<div class="container">
 								<div class="table-responsive">
-									<table id="dtBasicExample" class="table table-hover " cellspacing="0" width="100%">
+									<table id="all-publications-table" class="table table-hover " cellspacing="0" width="100%">
 										<thead>
 											<tr>
 												<th class="d-none d-sm-table-cell">Field</th>
@@ -155,7 +155,7 @@
 												<th>Details</th>
 											</tr>
 										</thead>
-										<tbody>
+										<tbody id="all-publications-body">
 											<tr>
 												<td> FL, IoT </td>
 												<td>2023</td>
@@ -308,14 +308,7 @@
 
 
 <script type="text/javascript" src="js/mdbootstrap/addons/datatables.min.js"></script>
-
-
-<script>
-	$(document).ready(function () {
-		$('#dtBasicExample').DataTable({order: [[1, 'desc']]});
-		$('.dataTables_length').addClass('bs-select');
-	});
-</script>
+<script src="js/content.js"></script>
 
 <!-- /SCRIPTS -->
 

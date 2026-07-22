@@ -1,0 +1,82 @@
+[
+  {
+    "id": "fedeq",
+    "period": "2023 - 2024",
+    "category": "Federated Learning",
+    "title": "Federated Deep Equilibrium Learning",
+    "summary": "A novel federated learning framework for edge networks that uses equilibrium learning and consensus optimization to create personalized models with lower communication and memory costs.",
+    "description": "Federated learning enables nodes in an edge network to collaboratively train a global model without centralizing their data. FeDEQ addresses communication bottlenecks, data heterogeneity, and memory limitations by combining deep equilibrium learning with consensus optimization to build a compact shared representation that supports personalization at each node. The method achieves competitive performance while significantly reducing communication size and training memory footprint.",
+    "thumbnail": "img/blog/fedeq.png",
+    "popupImage": "img/blog/fedeq.png",
+    "links": [
+      { "label": "Preprint", "url": "https://arxiv.org/abs/2309.15659v1" },
+      { "label": "GitHub", "url": "https://github.com/longtanle/FeDEQ" }
+    ]
+  },
+  {
+    "id": "fedpca",
+    "period": "2022 - 2023",
+    "category": "Federated Learning",
+    "title": "Federated PCA on Grassmann Manifold for IoT Anomaly Detection",
+    "summary": "A privacy-preserving anomaly detection framework for IoT networks that enables efficient collaborative learning on resource-constrained devices.",
+    "description": "This project addresses the need for network-wide anomaly detection in IoT environments, where devices often have both security vulnerabilities and limited computational capacity. The framework applies distributed optimization and machine learning techniques to distinguish normal from anomalous traffic while preserving data privacy. By enabling collaborative training across devices, the method supports practical anomaly detection with fast model training and low overhead on constrained IoT hardware.",
+    "thumbnail": "img/blog/fedpca.png",
+    "popupImage": "img/blog/fedpca.png",
+    "links": [
+      { "label": "Paper", "url": "https://doi.org/10.1109/INFOCOM53939.2023.10229026" },
+      { "label": "GitHub", "url": "https://github.com/dual-grp/FedPCA_ToN" }
+    ]
+  },
+  {
+    "id": "wafl",
+    "period": "2021 - 2023",
+    "category": "Federated Learning",
+    "title": "Wasserstein Distributionally Robust Federated Learning",
+    "summary": "A generalizable federated learning framework that tackles non-i.i.d. data through distributionally robust optimization and optimal transport.",
+    "description": "WAFL addresses one of the central challenges in federated learning: participating clients often have highly non-i.i.d. data, which makes generalization difficult. The method uses Wasserstein distributionally robust optimization to improve robustness to distribution shift and unseen target domains. Framed as an empirical surrogate risk minimization problem and solved with a local SGD-based algorithm, WAFL demonstrates stronger generalization than vanilla FedAvg and competitive robustness across benchmark settings.",
+    "thumbnail": "img/blog/wafl_2.png",
+    "popupImage": "img/blog/wafl.png",
+    "links": [
+      { "label": "Preprint", "url": "https://arxiv.org/abs/2206.01432" },
+      { "label": "GitHub", "url": "https://github.com/dual-grp/WAFL" }
+    ]
+  },
+  {
+    "id": "hazard-map",
+    "period": "2020 - 2021",
+    "category": "IoT, Remote Sensing, Cloud Computing",
+    "title": "Hazard Map System for Ho Chi Minh City using Low-energy Sensors and Remote Sensing Data",
+    "summary": "A comprehensive air quality monitoring system for smart cities that combines wireless sensing with remote sensing data.",
+    "description": "This project introduces an air quality monitoring system for smart cities, deployed for Ho Chi Minh City. It integrates direct measurements from distributed sensors with analysis derived from remote sensing imagery to estimate air quality across areas that are difficult to cover physically. The system combines precise pollutant sensing, AQI estimation, and large-area remote analysis into a practical tool for urban environmental monitoring and policy support.",
+    "thumbnail": "img/blog/hazard.png",
+    "popupImage": "img/blog/hazard.png",
+    "links": [
+      { "label": "Paper", "url": "https://eudl.eu/doi/10.4108/eai.24-5-2021.169971" },
+      { "label": "GitHub", "url": "https://github.com/longtanle/remotesensing-server" }
+    ]
+  },
+  {
+    "id": "sdn-cloud",
+    "period": "2018 - 2020",
+    "category": "SDN, Cloud Computing",
+    "title": "OpenFlow-based Secure Switching System for Cloud Environments",
+    "summary": "A high-performance ML-based intrusion detection system for SDN-enabled cloud networks to detect anomalies and mitigate attacks.",
+    "description": "This project explores security improvements for Software-Defined Networking in cloud environments. It combines multiple machine learning techniques, including deep sparse autoencoders, conditional GANs, and ensemble learning, to improve intrusion detection accuracy and resilience. The work also leverages NetFPGA as a high-speed packet processing platform, enabling faster traffic classification while maintaining strong detection performance.",
+    "thumbnail": "img/blog/sdn.png",
+    "popupImage": "img/blog/sdn.png",
+    "links": [
+      { "label": "Paper", "url": "https://ieeexplore.ieee.org/abstract/document/9701522" }
+    ]
+  },
+  {
+    "id": "salinity-monitoring",
+    "period": "2019 - 2020",
+    "category": "IoT, Cloud Computing",
+    "title": "Water Salinity Level Monitoring System for Go Cong using IoT and Cloud Computing",
+    "summary": "A real-time monitoring and alerting system for water salinity using IoT sensors and cloud-based analytics.",
+    "description": "This project uses an IoT and cloud computing pipeline to monitor water salinity levels in Go Cong district, Tien Giang province, Vietnam. Sensors continuously collect salinity data, which is then processed and analyzed in the cloud to support scalability and accessibility. The system provides live dashboard access and automated alerts for critical salinity fluctuations, supporting proactive water resource management and local environmental protection.",
+    "thumbnail": "img/blog/iot_salinity_1.png",
+    "popupImage": "img/blog/iot_salinity.png",
+    "links": []
+  }
+]

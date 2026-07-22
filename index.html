@@ -191,8 +191,8 @@
 											<p align="justify">
 											I received my B.E. degree (Honors Program) in Computer Engineering from Vietnam National University Ho Chi Minh City - University of Technology (HCMUT) in 2018,
 											and Ph.D. degree in Computer Science at the University of Sydney (USYD) in 2025 under the supervision of <a href="https://dual-grp.github.io/website-dual/team/">Assoc.Prof. Nguyen Tran</a>.
-											I was a Research Engineer with Falcuty of Computer Science and Engineering, HCMUT, from 2018 to 2021, and was a Graduate Research Assistant at Falcuty of Engineering, USYD, from 2021 - 2025. 
-											Currently, I'm working as a Research Data Scientist at Intersect Australia within 3AI team. My research interests include Machine Learning and Data Mining, Edge Computing, and their applications for IoT and next-generation networking.
+											I was a Research Engineer with the Faculty of Computer Science and Engineering, HCMUT, from 2018 to 2021, and a Graduate Research Assistant at the Faculty of Engineering, USYD, from 2021 to 2025. 
+											Currently, I work as a Research Data Scientist at Intersect Australia within the 3AI team. My research interests include machine learning, data mining, edge computing, and their applications to IoT and next-generation networking.
 										</p>
 										</div>
 										<div class="about_short_contact_wrap">
@@ -202,7 +202,7 @@
 													<span>Sydney, NSW, Australia</span>
 												</li>
 												<li>
-													<span><label>Research Index:</label>
+													<span><label>Research Profiles:</label>
 														<a href="https://scholar.google.com.au/citations?user=CZZTrOoAAAAJ&hl=en">
 															<img class="svg" src="img/svg/google.svg" alt="" style="width:24px; height:24px"/>
 														</a>
@@ -250,7 +250,7 @@
 										<div class="buttons_wrap">
 											<ul>
 												<li>
-													<a href="index.html"><span>My CV</span></a>
+													<a href="data/LongLT_CV.pdf"><span>Download CV</span></a>
 												</li>
 												<!--
 												<li class="anchor">
@@ -428,7 +428,7 @@
 							</div>
 							<div class="container">
 								<div class="table-responsive">
-									<table id="dtBasicExample" class="table table-hover " cellspacing="0" width="100%">
+									<table id="selected-publications-table" class="table table-hover " cellspacing="0" width="100%">
 										<thead>
 											<tr>
 												<th class="d-none d-sm-table-cell">Field</th>
@@ -438,7 +438,7 @@
 												<th>Details</th>
 											</tr>
 										</thead>
-										<tbody>
+										<tbody id="selected-publications-body">
 											<tr>
 												<td> FL, IoT </td>
 												<td>2023</td>
@@ -551,8 +551,8 @@
 											<div class="inner">
 												<img class="svg" src="img/svg/portfolio.svg" alt="" />
 												<p class="year">2018 - 2021</p>
-												<h3 class="title">Researcher Engineer</h3>
-												<p class="text"> Falcuty of Computer Science and Engineering, HCMUT</p>
+												<h3 class="title">Research Engineer</h3>
+												<p class="text"> Faculty of Computer Science and Engineering, HCMUT</p>
 											</div>
 										</li>
 										</li><li class="">
@@ -682,7 +682,7 @@
 							</div>
 							
 							<div class="arlo_tm_list_wrap blog_list">
-								<ul class="total">
+								<ul class="total" id="projects-list">
 									<li class="wow fadeInUp" data-wow-duration="1.2s">
 										<div class="inner_list">
 											<div class="image_wrap">
@@ -995,14 +995,7 @@
 
 
 <script type="text/javascript" src="js/mdbootstrap/addons/datatables.min.js"></script>
-
-
-<script>
-	$(document).ready(function () {
-		$('#dtBasicExample').DataTable({order: [[1, 'desc']]});
-		$('.dataTables_length').addClass('bs-select');
-	});
-</script>
+<script src="js/content.js"></script>
 
 <!-- /SCRIPTS -->
 

@@ -1,0 +1,181 @@
+[
+  {
+    "id": "koopman-sdm-2025",
+    "selected": true,
+    "field": "FL, Time Series",
+    "year": 2025,
+    "type": "Conference",
+    "title": "Federated Koopman-Reservoir Learning for Large-Scale Multivariate Time-Series Anomaly Detection",
+    "authors": "L. T. Le et al.",
+    "venue": "SIAM International Conference on Data Mining (SDM), 2025.",
+    "links": [
+      { "label": "Paper", "url": "https://epubs.siam.org/doi/abs/10.1137/1.9781611978520.7" }
+    ]
+  },
+  {
+    "id": "fedeq-cikm-2024",
+    "selected": true,
+    "field": "FL, Edge AI",
+    "year": 2024,
+    "type": "Conference",
+    "title": "Federated Deep Equilibrium Learning: Harnessing Compact Global Representations to Enhance Personalization",
+    "authors": "L. T. Le, T. D. Nguyen, T. A. Nguyen, C. S. Hong, N. H. Tran",
+    "venue": "ACM International Conference on Information and Knowledge Management (CIKM), 2024.",
+    "links": [
+      { "label": "Paper", "url": "https://dl.acm.org/doi/abs/10.1145/3627673.3679752" },
+      { "label": "Preprint", "url": "https://arxiv.org/abs/2309.15659v1" },
+      { "label": "Code", "url": "https://github.com/longtanle/FeDEQ" }
+    ]
+  },
+  {
+    "id": "fedpca-ton-2024",
+    "selected": true,
+    "field": "FL, IoT",
+    "year": 2024,
+    "type": "Journal",
+    "title": "Federated PCA on Grassmann Manifold for IoT Anomaly Detection",
+    "authors": "T. A. Nguyen, J. He, L. T. Le, W. Bao, N. H. Tran",
+    "venue": "IEEE/ACM Transactions on Networking, 2024.",
+    "links": [
+      { "label": "Paper", "url": "https://ieeexplore.ieee.org/abstract/document/10593810" },
+      { "label": "Conference Version", "url": "https://doi.org/10.1109/INFOCOM53939.2023.10229026" },
+      { "label": "Code", "url": "https://github.com/dual-grp/FedPCA_ToN" }
+    ]
+  },
+  {
+    "id": "wafl-mona-2024",
+    "selected": true,
+    "field": "FL",
+    "year": 2024,
+    "type": "Journal",
+    "title": "Distributionally Robust Federated Learning for Mobile Edge Networks",
+    "authors": "T. A. Nguyen, J. Nguyen, L. T. Le, C. T. Dinh, N. H. Tran",
+    "venue": "Mobile Networks and Applications, 2024.",
+    "links": [
+      { "label": "Paper", "url": "https://link.springer.com/article/10.1007/s11036-024-02316-w" },
+      { "label": "Preprint", "url": "https://arxiv.org/abs/2206.01432" },
+      { "label": "Code", "url": "https://github.com/dual-grp/WAFL" }
+    ]
+  },
+  {
+    "id": "fedeq-preprint-2023",
+    "selected": false,
+    "field": "FL, IoT",
+    "year": 2023,
+    "type": "Preprint",
+    "title": "Federated Deep Equilibrium Learning: A Compact Shared Representation for Edge Communication Efficiency",
+    "authors": "L. T. Le, T. D. Nguyen, T. A. Nguyen, C. S. Hong, N. H. Tran",
+    "venue": "arXiv, 2023.",
+    "links": [
+      { "label": "Preprint", "url": "https://arxiv.org/abs/2309.15659v1" },
+      { "label": "Code", "url": "https://github.com/longtanle/FeDEQ" }
+    ]
+  },
+  {
+    "id": "fedpca-infocom-2023",
+    "selected": true,
+    "field": "FL, IoT",
+    "year": 2023,
+    "type": "Conference",
+    "title": "Federated PCA on Grassmann Manifold for Anomaly Detection in IoT Networks",
+    "authors": "T. A. Nguyen, J. He, L. T. Le, W. Bao, N. H. Tran",
+    "venue": "IEEE International Conference on Computer Communications (INFOCOM), 2023.",
+    "links": [
+      { "label": "Paper", "url": "https://doi.org/10.1109/INFOCOM53939.2023.10229026" },
+      { "label": "Preprint", "url": "https://arxiv.org/abs/2212.12121" },
+      { "label": "Code", "url": "https://github.com/dual-grp/FedPCA_ToN" }
+    ]
+  },
+  {
+    "id": "fpga-iot-2022",
+    "selected": false,
+    "field": "SDN, ML, FPGA",
+    "year": 2022,
+    "type": "Conference",
+    "title": "A High-Performance FPGA-Based Feature Engineering Architecture for Intrusion Detection System in SDN Networks",
+    "authors": "T. H. Q. Bao, L. T. Le, T. N. Thinh, C. K. Pham",
+    "venue": "International Conference on Intelligence of Things, 2022.",
+    "links": [
+      { "label": "Paper", "url": "https://link.springer.com/chapter/10.1007/978-3-031-15063-0_24" }
+    ]
+  },
+  {
+    "id": "sdn-cloud-revjec-2022",
+    "selected": false,
+    "field": "SDN, Cloud",
+    "year": 2022,
+    "type": "Journal",
+    "title": "Enhancing Security and Robustness for SDN-Enabled Cloud Networks",
+    "authors": "L. T. Le, T. N. Thinh",
+    "venue": "REV Journal on Electronics and Communications, 2022.",
+    "links": [
+      { "label": "Paper", "url": "https://mail.rev-jec.org/index.php/rev-jec/article/view/294" }
+    ]
+  },
+  {
+    "id": "wafl-preprint-2022",
+    "selected": true,
+    "field": "FL",
+    "year": 2022,
+    "type": "Preprint",
+    "title": "On the Generalization of Wasserstein Robust Federated Learning",
+    "authors": "T. A. Nguyen, J. Nguyen, L. T. Le, C. T. Dinh, N. H. Tran",
+    "venue": "Preprint, 2022.",
+    "links": [
+      { "label": "Preprint", "url": "https://arxiv.org/abs/2206.01432" },
+      { "label": "Code", "url": "https://github.com/dual-grp/WAFL" }
+    ]
+  },
+  {
+    "id": "nics-2021",
+    "selected": true,
+    "field": "SDN, ML",
+    "year": 2021,
+    "type": "Conference",
+    "title": "On the Improvement of Machine Learning Based Intrusion Detection System for SDN Networks",
+    "authors": "L. T. Le, T. N. Thinh",
+    "venue": "NAFOSTED Conference on Information and Computer Science (NICS), 2021.",
+    "links": [
+      { "label": "Paper", "url": "https://ieeexplore.ieee.org/abstract/document/9701522" }
+    ]
+  },
+  {
+    "id": "air-quality-2021",
+    "selected": false,
+    "field": "IoT, Edge Computing",
+    "year": 2021,
+    "type": "Journal",
+    "title": "Air Quality Monitoring Systems with Multiple Data Sources for Ho Chi Minh City",
+    "authors": "C. P. Q., T. N. Thinh, T. Le, P. Vu, L. T. Le, K. Hoang",
+    "venue": "EAI Endorsed Transactions on Context-aware Systems and Applications, 2021.",
+    "links": [
+      { "label": "Paper", "url": "https://eudl.eu/doi/10.4108/eai.24-5-2021.169971" }
+    ]
+  },
+  {
+    "id": "parking-atc-2021",
+    "selected": true,
+    "field": "Edge Computing",
+    "year": 2021,
+    "type": "Conference",
+    "title": "An Edge-AI Heterogeneous Solution for Real-time Parking Occupancy Detection",
+    "authors": "T. N. Thinh, L. T. Le et al.",
+    "venue": "International Conference on Advanced Technologies for Communications (ATC), 2021.",
+    "links": [
+      { "label": "Paper", "url": "https://ieeexplore.ieee.org/document/9598291" }
+    ]
+  },
+  {
+    "id": "odl-antiflood-2018",
+    "selected": true,
+    "field": "SDN",
+    "year": 2018,
+    "type": "Conference",
+    "title": "ODL-ANTIFLOOD: A Comprehensive Solution for Securing OpenDayLight Controller",
+    "authors": "T. N. Thinh, L. T. Le, M. A. T. Tran",
+    "venue": "International Conference on Advanced Computing and Applications (ACOMP), 2018.",
+    "links": [
+      { "label": "Paper", "url": "https://ieeexplore.ieee.org/abstract/document/8589483" }
+    ]
+  }
+]
