@@ -114,6 +114,18 @@
         ].join("");
       }
 
+      var contactLeftBox = document.querySelector("#contact .leftbox .short_info_wrap");
+      if (contactLeftBox) {
+        contactLeftBox.innerHTML = [
+          "<ul>",
+          '<li><p><label>Address:</label><span> Sydney, NSW, Australia</span></p></li>',
+          '<li><p><label>Email:</label><span><a href="mailto:tanlong.ce@gmail.com">tanlong.ce@gmail.com</a></span></p></li>',
+          '<li><p><label>Website:</label><span><a href="https://longtanle.github.io">longtanle.github.io</a></span></p></li>',
+          '<li><p><label>Google Scholar:</label><span><a href="https://scholar.google.com.au/citations?user=CZZTrOoAAAAJ&hl=en">profile</a></span></p></li>',
+          "</ul>"
+        ].join("");
+      }
+
       var contactBox = document.querySelector("#contact .rightbox");
       if (contactBox) {
         contactBox.innerHTML = [
