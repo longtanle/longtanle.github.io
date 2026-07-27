@@ -83,7 +83,7 @@
     "selected": false,
     "field": "Edge AI, FPGA",
     "year": 2025,
-    "type": "Conference",
+    "type": "Book Chapter",
     "title": "ADMEdge: Accelerating Edge Computing Through Co-design for Enhanced Data Mobility",
     "authors": "Tran Anh Kiet, Tran Ngoc Thinh, Thai Ngo, Long Tan Le",
     "venue": "Book Chapter, 2025.",
@@ -109,6 +109,10 @@
     "links": [
       {
         "label": "Paper",
+        "url": "https://doi.org/10.1137/1.9781611978520.7"
+      },
+      {
+        "label": "Paper",
         "url": "https://epubs.siam.org/doi/abs/10.1137/1.9781611978520.7"
       }
     ]
@@ -124,8 +128,12 @@
     "type": "Conference",
     "title": "Federated Deep Equilibrium Learning: Harnessing Compact Global Representations to Enhance Personalization",
     "authors": "Long Tan Le, Tuan Dung Nguyen, Tung-Anh Nguyen, Choong Seon Hong, Suranga Seneviratne, Wei Bao, Nguyen H. Tran",
-    "venue": "ACM International Conference on Information and Knowledge Management (CIKM), 2024.",
+    "venue": "Conference, 2024.",
     "links": [
+      {
+        "label": "Paper",
+        "url": "https://doi.org/10.1145/3627673.3679752"
+      },
       {
         "label": "Paper",
         "url": "https://dl.acm.org/doi/abs/10.1145/3627673.3679752"
@@ -220,6 +228,10 @@
     "links": [
       {
         "label": "Paper",
+        "url": "https://doi.org/10.21553/rev-jec.294"
+      },
+      {
+        "label": "Paper",
         "url": "https://mail.rev-jec.org/index.php/rev-jec/article/view/294"
       }
     ]
@@ -273,7 +285,7 @@
     "type": "Conference",
     "title": "Estimating Land Surface Temperature from Landsat-8 Images Based on a Cloud-Based Automated Processing Service",
     "authors": "Phan Hien Vu, Tan-Long Le, Cuong Pham-Quoc",
-    "venue": "International Conference on Context-Aware Systems and Applications, 2021.",
+    "venue": "International Conference on Context-Aware Systems and Applicationsmunications Engineering, 2021.",
     "links": [
       {
         "label": "Paper",
