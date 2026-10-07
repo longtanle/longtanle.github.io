@@ -102,7 +102,7 @@
     "selected": true,
     "field": "FL, Time Series",
     "year": 2025,
-    "type": "Conference",
+    "type": "Book Chapter",
     "title": "Federated Koopman-Reservoir Learning for Large-Scale Multivariate Time-Series Anomaly Detection",
     "authors": "Long Tan Le, Tung-Anh Nguyen, Han Shu, Suranga Seneviratne, Choong Seon Hong, Nguyen H. Tran",
     "venue": "Proceedings of the 2025 SIAM International Conference on Data Mining (SDM), 2025.",
