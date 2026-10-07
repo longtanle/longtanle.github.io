@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en" data-site-root="../">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="An accessible introduction to federated learning, the problems it can solve, and the practical challenges hidden behind the simple idea of training without moving data.">
+<title>Federated learning: useful collaboration without centralising data | Long Tan Le</title>
+<link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700,800" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700" rel="stylesheet">
+<link rel="stylesheet" href="../css/plugins.css">
+<link rel="stylesheet" href="../css/style.css">
+<link rel="stylesheet" href="../css/professional.css?v=8">
+<link rel="stylesheet" href="../css/blog-cv.css?v=2">
+</head>
+<body>
+<div class="arlo_tm_wrapper_all">
+  <div data-site-shell="mobile-header"></div>
+  <div class="arlo_tm_content">
+    <div data-site-shell="sidebar"></div>
+    <main class="arlo_tm_rightpart"><div class="rightpart_inner"><section class="academic_page"><div class="container article_shell">
+    <a class="article_back" href="../blog.html">← All notes</a>
+    <header class="article_header page_hero"><div>
+      <span class="page_eyebrow">Research notes</span>
+      <h1>Federated learning: useful collaboration without centralising data</h1>
+      <div class="article_meta"><span>8 October 2026</span><span>5 min read</span><div class="blog_tags"><span>Federated Learning</span><span>Distributed AI</span><span>Privacy</span></div></div>
+    </div></header>
+    <article class="article_body"><p>Modern machine-learning systems benefit from diverse data, but that data is often distributed across phones, hospitals, companies, sensors, or geographical regions. Moving everything into one central repository may be expensive, slow, restricted by policy, or simply unacceptable to the people and organisations that own it.</p>
+<p><strong>Federated learning</strong> offers a different model of collaboration. Instead of collecting raw data in one place, participants train locally and share model updates with a coordinating server. The server combines those updates into a new global model, which is then returned to participants for another training round.</p>
+<p>The appealing summary is often &quot;move the model, not the data.&quot; That is a useful starting point, but a reliable federated system requires much more than changing where training runs.</p>
+<h2>How a basic round works</h2>
+<p>A typical federated-learning round has four steps:</p>
+<ol>
+<li>A server selects a group of available participants and sends them the current model.</li>
+<li>Each participant trains the model using its local data.</li>
+<li>Participants send model updates, rather than raw training records, to the server.</li>
+<li>The server aggregates the updates and produces the next global model.</li>
+</ol>
+<p>The best-known baseline is <strong>Federated Averaging</strong>, which combines local updates according to the amount of data held by each participant. Repeating this process can produce a useful shared model while the original records remain local.</p>
+<p>This architecture can support cross-device settings involving many intermittently connected devices, or cross-silo settings involving a smaller number of organisations such as hospitals and research institutions.</p>
+<h2>Why distribution changes the learning problem</h2>
+<p>Centralised training usually assumes that data can be shuffled into reasonably representative batches and processed by reliable infrastructure. Federated learning weakens both assumptions.</p>
+<p>Participants rarely hold identically distributed data. One hospital may serve a different population from another. A person's phone reflects their own language and behaviour. An industrial sensor may operate under environmental conditions that do not appear elsewhere. This <strong>statistical heterogeneity</strong> can make local updates disagree and can slow or destabilise global training.</p>
+<p>The computing environment is also heterogeneous. Participants may have different processors, memory limits, network connections, energy budgets, and availability. Some will finish quickly, some will be slow, and others will disconnect before a round completes.</p>
+<p>The central research question is therefore not only how to aggregate models. It is how to learn fairly and efficiently when the data, devices, and objectives are all different.</p>
+<h2>Privacy is improved, not guaranteed</h2>
+<p>Keeping raw data local reduces unnecessary movement and creates a useful privacy boundary. It does not automatically make a system private.</p>
+<p>Model updates can reveal information under certain attacks. A deployment may therefore combine federated learning with techniques such as secure aggregation, differential privacy, access controls, and careful logging. Each protection has a cost: stronger privacy may reduce model utility, increase communication, or make failures harder to diagnose.</p>
+<p>Privacy should be treated as a system property with a clearly defined threat model, not as a label attached to the training algorithm.</p>
+<h2>Communication is part of the algorithm</h2>
+<p>In distributed environments, sending an update may be more expensive than computing it. A practical design must consider:</p>
+<ul>
+<li>how often participants communicate;</li>
+<li>how many participants join each round;</li>
+<li>whether updates can be compressed or sparsified;</li>
+<li>how the system responds to slow or unavailable participants; and</li>
+<li>whether local computation can reduce the number of global rounds.</li>
+</ul>
+<p>These choices connect statistical performance with infrastructure cost. A model that reaches slightly higher accuracy but requires ten times as much communication may be the wrong model for an edge deployment.</p>
+<h2>One global model may not fit everyone</h2>
+<p>Participants can have genuinely different goals. Personalisation methods address this by combining shared knowledge with local adaptation. Some approaches fine-tune a global model locally, while others learn shared representations and participant-specific components together.</p>
+<p>Personalisation changes how success should be measured. Average global accuracy is no longer enough. We may also care about worst-participant performance, fairness across groups, calibration, robustness, and the cost of adaptation.</p>
+<h2>When federated learning is a good fit</h2>
+<p>Federated learning is most compelling when collaboration offers clear value and centralising raw data is undesirable. Examples include mobile services, health research, financial institutions, industrial networks, and fleets of connected devices.</p>
+<p>It is not automatically the best choice for every distributed dataset. If data can be shared safely and cheaply, a centralised pipeline may be simpler to operate. Federated learning introduces coordination, monitoring, security, and reproducibility challenges that should be justified by the application.</p>
+<h2>A practical way to evaluate a federated system</h2>
+<p>I find it useful to ask five questions:</p>
+<ol>
+<li><strong>Utility:</strong> Does collaboration improve outcomes for the participants who need it?</li>
+<li><strong>Heterogeneity:</strong> How does the method behave across different data distributions and device capabilities?</li>
+<li><strong>Efficiency:</strong> What are the communication, compute, energy, and latency costs?</li>
+<li><strong>Trust:</strong> What can the server and participants observe, and what failures or attacks are considered?</li>
+<li><strong>Operations:</strong> Can the system be monitored, reproduced, updated, and recovered in practice?</li>
+</ol>
+<p>Federated learning is ultimately a systems problem as much as a machine-learning problem. Its value comes from making useful collaboration possible under real constraints - and from being honest about the trade-offs required to do so.</p></article>
+  </div></section></div></main>
+    <a class="arlo_tm_totop" href="#" aria-label="Back to top"></a>
+  </div>
+</div>
+<script src="../js/jquery.js"></script>
+<script src="../js/plugins.js?v=2"></script>
+<script src="../js/init.js"></script>
+<script src="../js/site-shell.js?v=8"></script>
+</body>
+</html>

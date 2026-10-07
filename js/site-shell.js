@@ -3,9 +3,10 @@
 
   var currentPage = (window.location.pathname.split("/").pop() || "index.html").toLowerCase();
   var isHome = currentPage === "" || currentPage === "index.html";
+  var siteRoot = document.documentElement.getAttribute("data-site-root") || "";
 
   function hrefFor(anchor) {
-    return isHome ? anchor : "index.html" + anchor;
+    return isHome ? anchor : siteRoot + "index.html" + anchor;
   }
 
   function menuItems() {
@@ -15,8 +16,9 @@
       { label: "Research", href: hrefFor("#services") },
       { label: "Publications", href: currentPage === "full_publication.html" ? "#full_publication" : hrefFor("#publication") },
       { label: "Projects", href: hrefFor("#news") },
-      { label: "Gallery", href: "portfolio.html" },
-      { label: "CV", href: "data/LongLT_CV.pdf" },
+      { label: "Teaching", href: hrefFor("#teaching") },
+      { label: "Gallery", href: siteRoot + "portfolio.html" },
+      { label: "Blog", href: siteRoot + "blog.html" },
       { label: "Contact", href: hrefFor("#contact") }
     ];
   }
@@ -46,7 +48,7 @@
     return [
       '<div class="arlo_tm_mobile_header_wrap">',
       '<div class="main_wrap">',
-      '<div class="logo"></div>',
+      '<div class="logo"><a href="' + hrefFor("#home") + '" aria-label="Long Tan Le home"><img class="mobile_signature_logo" src="' + siteRoot + 'img/logo/logo-imlong-0.png" alt="Long Tan Le signature logo" /></a></div>',
       '<div class="arlo_tm_trigger">',
       '<div class="hamburger hamburger--collapse-r">',
       '<div class="hamburger-box"><div class="hamburger-inner"></div></div>',
@@ -64,7 +66,7 @@
     return [
       '<div class="arlo_tm_leftpart_wrap">',
       '<div class="leftpart_inner">',
-      '<div class="logo_wrap"><a href="' + hrefFor("#home") + '"><img src="img/logo/logo-imlong-0.png" alt="" /></a></div>',
+      '<div class="logo_wrap"><a class="brand_mark" href="' + hrefFor("#home") + '" aria-label="Long Tan Le home"><img class="signature_logo" src="' + siteRoot + 'img/logo/logo-imlong-0.png" alt="Long Tan Le signature logo" /></a></div>',
       '<div class="menu_list_wrap"><ul class="anchor_nav">' + renderMenu() + "</ul></div>",
       '<div class="leftpart_bottom"><div class="social_wrap"><ul>' + renderSocial() + "</ul></div></div>",
       '<a class="arlo_tm_resize" href="#"><i class="xcon-angle-left"></i></a>',
@@ -102,45 +104,26 @@
       el.innerHTML = "<p>&copy; Copyright 2026. All rights reserved.</p>";
     });
 
-    if (isHome) {
-      var highlights = document.querySelector(".arlo_tm_skills_wrap .arlo_tm_mini_title_holder");
-      if (highlights) {
-        highlights.innerHTML = [
-          "<h4><span>Recent Highlights</span></h4>",
-          '<p><b>2026:</b> Published new work in IEEE Journal on Selected Areas in Communications and IEEE Internet of Things Journal.</p>',
-          '<p><b>2025:</b> Federated Koopman-Reservoir Learning appeared at SIAM SDM (<a href="https://epubs.siam.org/doi/abs/10.1137/1.9781611978520.7">paper</a>).</p>',
-          "<p><b>March 2025:</b> Successfully defended my PhD thesis at the University of Sydney.</p>",
-          "<p><b>2024:</b> Published papers in ACM CIKM and IEEE/ACM Transactions on Networking.</p>"
-        ].join("");
-      }
-
-      var contactLeftBox = document.querySelector("#contact .leftbox .short_info_wrap");
-      if (contactLeftBox) {
-        contactLeftBox.innerHTML = [
-          "<ul>",
-          '<li><p><label>Address:</label><span> Sydney, NSW, Australia</span></p></li>',
-          '<li><p><label>Email:</label><span><a href="mailto:tanlong.ce@gmail.com">tanlong.ce@gmail.com</a></span></p></li>',
-          '<li><p><label>Website:</label><span><a href="https://longtanle.github.io">longtanle.github.io</a></span></p></li>',
-          '<li><p><label>Google Scholar:</label><span><a href="https://scholar.google.com.au/citations?user=CZZTrOoAAAAJ&hl=en">profile</a></span></p></li>',
-          "</ul>"
-        ].join("");
-      }
-
-      var contactBox = document.querySelector("#contact .rightbox");
-      if (contactBox) {
-        contactBox.innerHTML = [
-          '<div class="arlo_tm_mini_title_holder contact"><h4>Preferred contact</h4></div>',
-          '<div class="short_info_wrap">',
-          "<p>The quickest way to reach me is by email. For research collaboration, data science work, or speaking opportunities, please get in touch through one of the links below.</p>",
-          '<div class="contact_link_list">',
-          '<p><label>Email:</label><span><a href="mailto:tanlong.ce@gmail.com">tanlong.ce@gmail.com</a></span></p>',
-          '<p><label>LinkedIn:</label><span><a href="https://www.linkedin.com/in/long-le-tan-660018128/">long-le-tan</a></span></p>',
-          '<p><label>GitHub:</label><span><a href="https://github.com/longtanle">github.com/longtanle</a></span></p>',
-          '<p><label>ORCID:</label><span><a href="https://orcid.org/0000-0003-3284-1990">0000-0003-3284-1990</a></span></p>',
+      var contactContainer = document.querySelector("#contact .arlo_tm_contact_wrap_all > .container");
+      if (contactContainer) {
+        contactContainer.innerHTML = [
+          '<div class="contact_panel">',
+          '<div class="contact_intro">',
+          '<span class="contact_eyebrow">Research · Data science · Collaboration</span>',
+          '<h4>Let\'s connect.</h4>',
+          '<p>I welcome conversations about research collaboration, applied data science, speaking, and opportunities to build dependable AI systems.</p>',
+          '<p class="contact_location"><i class="fa fa-map-marker" aria-hidden="true"></i> Sydney, NSW, Australia</p>',
+          '<a class="contact_primary" href="mailto:tanlong.ce@gmail.com"><i class="fa fa-envelope" aria-hidden="true"></i> Email me</a>',
+          "</div>",
+          '<div class="contact_methods" aria-label="Contact and research profiles">',
+          '<a href="mailto:tanlong.ce@gmail.com"><span>Email</span><strong>tanlong.ce@gmail.com</strong><i class="fa fa-arrow-right" aria-hidden="true"></i></a>',
+          '<a href="https://www.linkedin.com/in/long-le-tan-660018128/"><span>LinkedIn</span><strong>Professional profile</strong><i class="fa fa-arrow-right" aria-hidden="true"></i></a>',
+          '<a href="https://scholar.google.com.au/citations?user=CZZTrOoAAAAJ&hl=en"><span>Google Scholar</span><strong>Research publications</strong><i class="fa fa-arrow-right" aria-hidden="true"></i></a>',
+          '<a href="https://github.com/longtanle"><span>GitHub</span><strong>Code and projects</strong><i class="fa fa-arrow-right" aria-hidden="true"></i></a>',
+          '<a href="https://orcid.org/0000-0003-3284-1990"><span>ORCID</span><strong>0000-0003-3284-1990</strong><i class="fa fa-arrow-right" aria-hidden="true"></i></a>',
           "</div>",
           "</div>"
         ].join("");
-      }
     }
   }
 

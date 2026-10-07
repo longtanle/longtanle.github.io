@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en" data-site-root="../">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="What edge AI is, when it is useful, and how latency, energy, reliability, and model design shape intelligence outside the cloud.">
+<title>Edge AI: bringing intelligence closer to where data is created | Long Tan Le</title>
+<link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700,800" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700" rel="stylesheet">
+<link rel="stylesheet" href="../css/plugins.css">
+<link rel="stylesheet" href="../css/style.css">
+<link rel="stylesheet" href="../css/professional.css?v=8">
+<link rel="stylesheet" href="../css/blog-cv.css?v=2">
+</head>
+<body>
+<div class="arlo_tm_wrapper_all">
+  <div data-site-shell="mobile-header"></div>
+  <div class="arlo_tm_content">
+    <div data-site-shell="sidebar"></div>
+    <main class="arlo_tm_rightpart"><div class="rightpart_inner"><section class="academic_page"><div class="container article_shell">
+    <a class="article_back" href="../blog.html">← All notes</a>
+    <header class="article_header page_hero"><div>
+      <span class="page_eyebrow">Research notes</span>
+      <h1>Edge AI: bringing intelligence closer to where data is created</h1>
+      <div class="article_meta"><span>7 October 2026</span><span>5 min read</span><div class="blog_tags"><span>Edge AI</span><span>IoT</span><span>Efficient ML</span></div></div>
+    </div></header>
+    <article class="article_body"><p>Cloud computing has made powerful machine-learning services widely accessible. Yet many applications cannot send every sensor reading, image, or interaction to a remote data centre and wait for a response. A robot must react quickly. A wearable device should protect personal data. A monitoring system may need to keep operating when its network connection disappears.</p>
+<p><strong>Edge AI</strong> places some or all machine-learning computation close to where data is generated: on a phone, camera, vehicle, gateway, embedded computer, or local server. The objective is not to replace the cloud. It is to decide which intelligence belongs locally, which belongs centrally, and how the two should work together.</p>
+<h2>Why move inference to the edge?</h2>
+<p>Four motivations appear repeatedly.</p>
+<h3>Lower latency</h3>
+<p>Sending data across a network adds delay and variability. Local inference can support applications that need predictable, near-real-time responses, including industrial control, assistive technologies, autonomous systems, and interactive experiences.</p>
+<h3>Better resilience</h3>
+<p>Connectivity is not always reliable. An edge system can continue performing essential functions during an outage or in environments where a cloud connection is intermittent or unavailable.</p>
+<h3>Reduced data movement</h3>
+<p>Processing locally can reduce bandwidth costs and avoid transmitting every raw observation. A camera, for example, might send an event or compact representation rather than a continuous video stream.</p>
+<h3>Stronger data governance</h3>
+<p>Keeping sensitive inputs on a local device can support privacy and organisational requirements. As with federated learning, local processing reduces exposure but does not remove the need for security, access control, and careful system design.</p>
+<h2>The edge is a constrained environment</h2>
+<p>Cloud accelerators are designed for throughput and can draw substantial power. Edge devices may have limited memory, modest processors, strict thermal limits, and small batteries. These constraints make model efficiency a primary design goal rather than a later optimisation.</p>
+<p>Common techniques include:</p>
+<ul>
+<li><strong>Quantisation</strong>, which represents values with fewer bits;</li>
+<li><strong>Pruning</strong>, which removes parameters or operations that contribute little;</li>
+<li><strong>Knowledge distillation</strong>, which transfers behaviour from a large model to a smaller one;</li>
+<li><strong>Efficient architectures</strong>, designed around the operations a target device performs well; and</li>
+<li><strong>Early-exit or adaptive models</strong>, which spend more computation only on difficult inputs.</li>
+</ul>
+<p>Each technique can affect accuracy, calibration, robustness, and maintainability. A smaller model is useful only if it remains reliable for the conditions it will encounter.</p>
+<h2>Edge AI is more than on-device inference</h2>
+<p>An edge deployment usually sits within a larger pipeline. Data must be collected and validated. Models must be versioned, delivered, monitored, and sometimes rolled back. Device capabilities and software versions may vary across a fleet.</p>
+<p>A useful architecture may distribute work across several levels:</p>
+<ol>
+<li>A sensor or device performs immediate preprocessing and inference.</li>
+<li>A nearby gateway coordinates multiple devices or runs a larger model.</li>
+<li>A cloud service handles expensive training, global analysis, and fleet management.</li>
+</ol>
+<p>This continuum allows designers to place each task where it makes the most sense. The placement can also change dynamically according to network quality, workload, energy, or privacy requirements.</p>
+<h2>What should we measure?</h2>
+<p>Accuracy alone gives an incomplete picture. Edge-AI evaluation should include:</p>
+<ul>
+<li>end-to-end and worst-case latency;</li>
+<li>memory use and model size;</li>
+<li>energy consumed per inference;</li>
+<li>throughput under realistic workloads;</li>
+<li>behaviour under distribution shift;</li>
+<li>performance across different device classes; and</li>
+<li>the cost and reliability of updates.</li>
+</ul>
+<p>Measurements should be taken on the intended hardware when possible. Desktop benchmarks and theoretical operation counts can be useful, but they may not predict real latency or energy because memory access, parallelism, drivers, and runtime implementations all matter.</p>
+<h2>Reliability after deployment</h2>
+<p>The environment around an edge model changes. Sensors age, lighting conditions vary, user behaviour evolves, and new device versions enter the fleet. Monitoring is difficult because raw data may intentionally remain local.</p>
+<p>Teams therefore need privacy-aware ways to detect drift and failure. Useful signals might include confidence distributions, compact summary statistics, operational telemetry, or carefully sampled cases for review. Updates should be staged and reversible, particularly when models affect safety or essential services.</p>
+<h2>Choosing the right division of work</h2>
+<p>A practical edge-AI design begins with the application rather than the model. I would ask:</p>
+<ol>
+<li>Which decisions must be made locally, and how quickly?</li>
+<li>What data may leave the device, and in what form?</li>
+<li>What happens when connectivity or power is limited?</li>
+<li>Which hardware will run the workload today and over the system's lifetime?</li>
+<li>How will models be monitored, updated, and recovered?</li>
+</ol>
+<p>These questions often lead to a hybrid solution. Small, dependable models handle immediate tasks at the edge, while central infrastructure supports coordination, deeper analysis, and continued learning.</p>
+<p>Edge AI is compelling because it connects algorithms to the physical conditions in which they operate. The best solution is rarely the largest model that can be squeezed onto a device. It is the system that delivers the required intelligence, within its latency, energy, privacy, and reliability budget, throughout deployment.</p></article>
+  </div></section></div></main>
+    <a class="arlo_tm_totop" href="#" aria-label="Back to top"></a>
+  </div>
+</div>
+<script src="../js/jquery.js"></script>
+<script src="../js/plugins.js?v=2"></script>
+<script src="../js/init.js"></script>
+<script src="../js/site-shell.js?v=8"></script>
+</body>
+</html>

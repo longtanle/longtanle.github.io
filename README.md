@@ -35,3 +35,25 @@ You can run the sync locally with:
 ```bash
 node scripts/sync-orcid-publications.mjs
 ```
+
+# Writing a blog post
+
+Blog posts live as Markdown files in `content/blog/`. Copy an existing post and update its frontmatter:
+
+```text
+---
+title: Your article title
+date: 2026-10-07
+summary: A one-sentence description shown on the blog page.
+tags: Machine Learning, Research
+slug: your-article-slug
+---
+```
+
+Write the article below the second `---` using Markdown. To preview generated pages locally, run:
+
+```bash
+node scripts/build-blog.mjs
+```
+
+Pushing a change under `content/blog/` automatically runs `.github/workflows/build-blog.yml`, regenerates `blog.html` and the individual pages under `blog/`, then commits those generated pages to the repository.

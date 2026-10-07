@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en" data-site-root="../">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="A short introduction to the questions I want to explore here—reliability, constraints, and the path from an effective model to a useful system.">
+<title>Building dependable AI systems beyond the benchmark | Long Tan Le</title>
+<link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700,800" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700" rel="stylesheet">
+<link rel="stylesheet" href="../css/plugins.css">
+<link rel="stylesheet" href="../css/style.css">
+<link rel="stylesheet" href="../css/professional.css?v=8">
+<link rel="stylesheet" href="../css/blog-cv.css?v=2">
+</head>
+<body>
+<div class="arlo_tm_wrapper_all">
+  <div data-site-shell="mobile-header"></div>
+  <div class="arlo_tm_content">
+    <div data-site-shell="sidebar"></div>
+    <main class="arlo_tm_rightpart"><div class="rightpart_inner"><section class="academic_page"><div class="container article_shell">
+    <a class="article_back" href="../blog.html">← All notes</a>
+    <header class="article_header page_hero"><div>
+      <span class="page_eyebrow">Research notes</span>
+      <h1>Building dependable AI systems beyond the benchmark</h1>
+      <div class="article_meta"><span>7 October 2026</span><span>2 min read</span><div class="blog_tags"><span>Applied AI</span><span>Research</span><span>Engineering</span></div></div>
+    </div></header>
+    <article class="article_body"><p>Machine learning results are often distilled into a single number. In practice, a model only becomes useful when it can operate within a wider system: data changes, compute is limited, communication is imperfect, and people need to understand what happens when something goes wrong.</p>
+<p>This blog is a place for practical notes at that boundary between <strong>research and deployment</strong>. I will write about ideas that have shaped my work in federated learning, time-series analysis, edge computing, distributed systems, and generative AI.</p>
+<h2>What dependable means in practice</h2>
+<p>For me, dependable AI starts with three questions:</p>
+<ol>
+<li>What assumptions does the method make about its data and environment?</li>
+<li>How does it behave when those assumptions no longer hold?</li>
+<li>Can the people operating the system detect, understand, and recover from failure?</li>
+</ol>
+<p>These questions push evaluation beyond average-case accuracy. They bring communication cost, latency, drift, privacy, uncertainty, and operational feedback into the design process.</p>
+<h2>From research result to working system</h2>
+<p>A promising method is the beginning rather than the end. The engineering work includes defining useful baselines, making experiments reproducible, instrumenting the pipeline, and testing under realistic constraints.</p>
+<blockquote>The most interesting systems are often built where statistical performance and operational reality meet.</blockquote>
+<p>Future notes will unpack those steps with examples, lessons, and small technical patterns that can be reused in research and practice.</p></article>
+  </div></section></div></main>
+    <a class="arlo_tm_totop" href="#" aria-label="Back to top"></a>
+  </div>
+</div>
+<script src="../js/jquery.js"></script>
+<script src="../js/plugins.js?v=2"></script>
+<script src="../js/init.js"></script>
+<script src="../js/site-shell.js?v=8"></script>
+</body>
+</html>

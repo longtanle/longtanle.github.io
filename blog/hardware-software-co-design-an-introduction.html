@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en" data-site-root="../">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="An introduction to designing models, runtimes, and computing hardware together instead of optimising each layer in isolation.">
+<title>Hardware-software co-design for efficient AI | Long Tan Le</title>
+<link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700,800" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700" rel="stylesheet">
+<link rel="stylesheet" href="../css/plugins.css">
+<link rel="stylesheet" href="../css/style.css">
+<link rel="stylesheet" href="../css/professional.css?v=8">
+<link rel="stylesheet" href="../css/blog-cv.css?v=2">
+</head>
+<body>
+<div class="arlo_tm_wrapper_all">
+  <div data-site-shell="mobile-header"></div>
+  <div class="arlo_tm_content">
+    <div data-site-shell="sidebar"></div>
+    <main class="arlo_tm_rightpart"><div class="rightpart_inner"><section class="academic_page"><div class="container article_shell">
+    <a class="article_back" href="../blog.html">← All notes</a>
+    <header class="article_header page_hero"><div>
+      <span class="page_eyebrow">Research notes</span>
+      <h1>Hardware-software co-design for efficient AI</h1>
+      <div class="article_meta"><span>6 October 2026</span><span>5 min read</span><div class="blog_tags"><span>Co-design</span><span>AI Hardware</span><span>Efficient Computing</span></div></div>
+    </div></header>
+    <article class="article_body"><p>Machine-learning efficiency is often discussed as if it were a property of the model alone: fewer parameters, fewer operations, or a smaller file. In a deployed system, performance emerges from the interaction between the algorithm, numerical representation, compiler, runtime, memory hierarchy, and physical hardware.</p>
+<p><strong>Hardware-software co-design</strong> treats those layers as connected design choices. Instead of building a model first and asking hardware to execute it efficiently later, co-design considers the target platform while the model and system are still being developed.</p>
+<p>This perspective is especially valuable for edge AI, where latency, energy, memory, and cost are tightly constrained.</p>
+<h2>Why operation counts are not enough</h2>
+<p>Two neural networks with similar numbers of multiply-accumulate operations can behave very differently on the same processor. One may use regular, well-supported operations with high data reuse. The other may require irregular memory access, frequent format conversion, or small operations that leave compute units underused.</p>
+<p>In many systems, moving data costs more time and energy than performing arithmetic on it. This makes memory behaviour central to performance. Cache size, on-chip buffers, bandwidth, tensor layout, and the opportunity to reuse intermediate values can matter as much as the nominal compute capability.</p>
+<p>Co-design therefore asks not only &quot;How many operations does this model require?&quot; but also &quot;How will these operations and their data move through this particular system?&quot;</p>
+<h2>The layers that meet in co-design</h2>
+<p>A useful co-design process connects several layers.</p>
+<h3>Model architecture</h3>
+<p>The choice of layers, tensor shapes, activation functions, sparsity patterns, and attention mechanisms determines the workload presented to the system. Regular structures are generally easier to accelerate, while dynamic or irregular computation may offer algorithmic benefits but create implementation challenges.</p>
+<h3>Numerical representation</h3>
+<p>Lower-precision formats can reduce storage, memory traffic, and compute cost. Quantisation may use 8-bit integers, even lower precision, or mixed precision across different parts of a model. The important question is where reduced precision is safe and how the hardware supports it.</p>
+<h3>Compiler and runtime</h3>
+<p>Compilers transform a model graph into executable kernels. They may fuse operations, schedule loops, choose memory layouts, and target specialised instructions. A theoretically efficient accelerator can still perform poorly if the software stack cannot map models to it effectively.</p>
+<h3>Hardware architecture</h3>
+<p>The hardware determines available parallelism, memory capacity, bandwidth, supported data types, and energy characteristics. CPUs, GPUs, neural accelerators, and FPGAs offer different balances of programmability and specialisation.</p>
+<h2>FPGAs as a co-design platform</h2>
+<p>Field-programmable gate arrays are interesting for research because their data paths and memory structures can be configured for a workload. Designers can explore custom parallelism, streaming pipelines, specialised precision, and direct interfaces to sensors.</p>
+<p>This flexibility can support low-latency and energy-efficient inference, particularly when the workload is stable and the design can exploit regular data flow. The trade-off is development complexity. Hardware description, verification, timing closure, resource constraints, and toolchain behaviour become part of the machine-learning engineering process.</p>
+<p>FPGAs are not universally better than GPUs or dedicated accelerators. Their value depends on workload shape, production volume, latency requirements, power budget, and the need to update the design.</p>
+<h2>A simple co-design example</h2>
+<p>Imagine an anomaly-detection model for a networked sensor gateway. A purely model-centric approach might select the architecture with the highest validation score. A co-design approach would evaluate several connected questions:</p>
+<ol>
+<li>Can the input be processed as a stream without storing a large window in external memory?</li>
+<li>Which layers dominate latency and memory traffic?</li>
+<li>Can weights and activations use lower precision without harming detection performance?</li>
+<li>Does the target device efficiently support the chosen operations?</li>
+<li>Can preprocessing and inference share buffers or be fused into one pipeline?</li>
+<li>How will the system be updated when traffic patterns change?</li>
+</ol>
+<p>The final design may accept a very small reduction in benchmark accuracy in exchange for substantially lower latency, predictable timing, or the ability to run within the available power budget. Whether that is the right trade depends on the application's objectives.</p>
+<h2>Measure on the complete system</h2>
+<p>Co-design requires measurements that cross abstraction boundaries. Useful metrics include:</p>
+<ul>
+<li>task accuracy, robustness, and calibration;</li>
+<li>end-to-end latency rather than isolated kernel time;</li>
+<li>throughput at realistic batch sizes;</li>
+<li>memory footprint and off-chip traffic;</li>
+<li>energy per inference;</li>
+<li>hardware utilisation;</li>
+<li>compilation and deployment complexity; and</li>
+<li>flexibility for future model updates.</li>
+</ul>
+<p>These measurements should be taken under representative conditions. Large batches may make a device look efficient even when the real application processes one sample at a time. A fast accelerator kernel may have little effect if preprocessing or data transfer dominates total latency.</p>
+<h2>Co-design as a research method</h2>
+<p>Hardware-software co-design is not limited to building custom chips. It is a way of reasoning about the entire computational path. The same mindset applies when choosing a model for a mobile processor, adapting an algorithm to a GPU, optimising a distributed training pipeline, or mapping inference to an FPGA.</p>
+<p>The central lesson is that efficiency cannot be added reliably at the end. Model quality, numerical precision, data movement, software support, and hardware capability should be evaluated together. When those layers are aligned, systems can become not only faster, but also more predictable, energy-efficient, and practical to deploy.</p></article>
+  </div></section></div></main>
+    <a class="arlo_tm_totop" href="#" aria-label="Back to top"></a>
+  </div>
+</div>
+<script src="../js/jquery.js"></script>
+<script src="../js/plugins.js?v=2"></script>
+<script src="../js/init.js"></script>
+<script src="../js/site-shell.js?v=8"></script>
+</body>
+</html>
