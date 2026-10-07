@@ -38,6 +38,25 @@
     ]
   },
   {
+    "id": "10-1109-infocom59046-2026-11571335",
+    "source": "orcid",
+    "orcidPutCode": 229029356,
+    "doi": "10.1109/infocom59046.2026.11571335",
+    "selected": false,
+    "field": "",
+    "year": 2026,
+    "type": "Conference",
+    "title": "GoodSpeed: Optimizing Fair Goodput with Adaptive Speculative Decoding in Distributed Edge Inference",
+    "authors": "Phuong Tran, Tzu-Hao Liu, Long Tan Le, Tung-Anh Nguyen, Van Quan La, Eason Yu, Han Shu, Choong Seon Hong, Nguyen H. Tran",
+    "venue": "IEEE INFOCOM 2026 - IEEE Conference on Computer Communications, 2026.",
+    "links": [
+      {
+        "label": "Paper",
+        "url": "https://doi.org/10.1109/infocom59046.2026.11571335"
+      }
+    ]
+  },
+  {
     "id": "10-1007-978-981-95-4384-7-5",
     "source": "orcid",
     "orcidPutCode": 196127134,
