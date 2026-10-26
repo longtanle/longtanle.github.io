@@ -1,5 +1,24 @@
 [
   {
+    "id": "10-1007-978-981-92-6513-8-38",
+    "source": "orcid",
+    "orcidPutCode": 229379755,
+    "doi": "10.1007/978-981-92-6513-8_38",
+    "selected": false,
+    "field": "",
+    "year": 2027,
+    "type": "Book Chapter",
+    "title": "VLA-Traj: An Analytically Bounded FPGA Accelerator for Deterministic Transformer–GRU Trajectory Planning",
+    "authors": "Ngo Duc Anh, Tran Ngoc Thinh, Long Tan Le",
+    "venue": "Book Chapter, 2027.",
+    "links": [
+      {
+        "label": "Paper",
+        "url": "https://doi.org/10.1007/978-981-92-6513-8_38"
+      }
+    ]
+  },
+  {
     "id": "10-1109-jsac-2026-3656885",
     "source": "orcid",
     "orcidPutCode": 203202960,
