@@ -1,24 +1,5 @@
 [
   {
-    "id": "10-1007-978-981-92-6513-8-38",
-    "source": "orcid",
-    "orcidPutCode": 229379755,
-    "doi": "10.1007/978-981-92-6513-8_38",
-    "selected": false,
-    "field": "",
-    "year": 2027,
-    "type": "Book Chapter",
-    "title": "VLA-Traj: An Analytically Bounded FPGA Accelerator for Deterministic Transformer–GRU Trajectory Planning",
-    "authors": "Ngo Duc Anh, Tran Ngoc Thinh, Long Tan Le",
-    "venue": "International Conference on Multi-disciplinary Trends in Artificial Intelligence, 2027.",
-    "links": [
-      {
-        "label": "Paper",
-        "url": "https://doi.org/10.1007/978-981-92-6513-8_38"
-      }
-    ]
-  },
-  {
     "id": "10-1109-jsac-2026-3656885",
     "source": "orcid",
     "orcidPutCode": 203202960,
@@ -34,6 +15,25 @@
       {
         "label": "Paper",
         "url": "https://doi.org/10.1109/jsac.2026.3656885"
+      }
+    ]
+  },
+  {
+    "id": "10-1109-jiot-2026-3745776",
+    "source": "orcid",
+    "orcidPutCode": 231092075,
+    "doi": "10.1109/jiot.2026.3745776",
+    "selected": false,
+    "field": "",
+    "year": 2026,
+    "type": "Journal",
+    "title": "Federated Deep Equilibrium Learning over Resource-Constrained Edge Networks",
+    "authors": "Long Tan Le, Zerun Niu, Tuan Dung Nguyen, Tung-Anh Nguyen, Wei Bao, Suranga Seneviratne, Choong Seon Hong, Nguyen H. Tran",
+    "venue": "IEEE Internet of Things Journal, 2026.",
+    "links": [
+      {
+        "label": "Paper",
+        "url": "https://doi.org/10.1109/jiot.2026.3745776"
       }
     ]
   },
@@ -86,7 +86,7 @@
     "type": "Book Chapter",
     "title": "LERIS: An Energy-Efficient and Resource-Optimized Inference System for CNNs and MLPs in Edge AI Applications",
     "authors": "Phuc Van Le, Thanh-Dat Van Nguyen, Tran Ngoc Thinh, Huynh Phuc Nghi, Long Tan Le",
-    "venue": "International Conference on Neural Information Processing, 2026.",
+    "venue": "Book Chapter, 2026.",
     "links": [
       {
         "label": "Paper",
@@ -105,7 +105,7 @@
     "type": "Book Chapter",
     "title": "Multi-Sensor Fusion Core: A Real Time FPGA Based Sensor Fusion Architecture for Autonomous Vehicles with Ultra Low Latency and High Reliability",
     "authors": "Ngo Duc Anh, Tran Ngoc Thinh, Huynh Phuc Nghi, Long Tan Le",
-    "venue": "International Conference on Multi-disciplinary Trends in Artificial Intelligence, 2026.",
+    "venue": "Book Chapter, 2026.",
     "links": [
       {
         "label": "Paper",
@@ -124,7 +124,7 @@
     "type": "Book Chapter",
     "title": "ADMEdge: Accelerating Edge Computing Through Co-design for Enhanced Data Mobility",
     "authors": "Tran Anh Kiet, Tran Ngoc Thinh, Thai Ngo, Long Tan Le",
-    "venue": "Asian Conference on Intelligent Information and Database Systems, 2025.",
+    "venue": "Book Chapter, 2025.",
     "links": [
       {
         "label": "Paper",
@@ -166,8 +166,12 @@
     "type": "Conference",
     "title": "Federated Deep Equilibrium Learning: Harnessing Compact Global Representations to Enhance Personalization",
     "authors": "Long Tan Le, Tuan Dung Nguyen, Tung-Anh Nguyen, Choong Seon Hong, Suranga Seneviratne, Wei Bao, Nguyen H. Tran",
-    "venue": "ACM International Conference on Information and Knowledge Management, 2024.",
+    "venue": "Conference, 2024.",
     "links": [
+      {
+        "label": "Paper",
+        "url": "https://doi.org/10.1145/3627673.3679752"
+      },
       {
         "label": "Paper",
         "url": "https://dl.acm.org/doi/abs/10.1145/3627673.3679752"
